@@ -1,32 +1,37 @@
 import { Application } from "@splinetool/runtime";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Make sure you have a canvas in the body
+gsap.registerPlugin(ScrollTrigger);
+
+// Initialize Spline application
 const canvas = document.getElementById("canvas3ds");
-
-// Start the application and load the scene
 const spline = new Application(canvas);
+
+// Load the scene and set up the animation
 spline
   .load("https://prod.spline.design/60bmf97LcGdPYIAR/scene.splinecode")
   .then(() => {
-    // Find the object by name (e.g., "Cube")
+    // Assuming the object has a name like 'objectName', you can find it by name
+    const object = spline.findObjectByName("keyboard");
 
-    // Check if the object was found
-    if (spline) {
-      // Log the object for debugging
-      console.log(spline); // { name: 'Cube', id: '...', position: { x: 0, y: 0, z: 0 }, ... }
-
-      // Set the XYZ position of the object
-      obj.position.x = 45; // Move 10 units on the X axis
-      obj.position.y = 5; // Move 5 units on the Y axis
-      obj.position.z = -2; // Move -2 units on the Z axis
-
-      console.log(
-        `Object new position: (${spline.position.x}, ${spline.position.y}, ${spline.position.z})`
-      );
-    } else {
-      console.error('Object "Cube" not found in the scene.');
+    if (object) {
+      // Create a timeline for the scroll animation
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#particles-js1",
+            start: "top center",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        })
+        .to(object.position, {
+          // Move the object to the left (adjust the value as needed)
+          x: -50,
+          y: 50,
+          duration: 1,
+          scale: 6,
+        });
     }
-  })
-  .catch((error) => {
-    console.error("Error loading Spline scene:", error);
   });

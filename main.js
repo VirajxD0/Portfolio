@@ -1,32 +1,33 @@
 import { Application } from "@splinetool/runtime";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Make sure you have a canvas in the body
+gsap.registerPlugin(ScrollTrigger);
+
+// Initialize Spline application
 const canvas = document.getElementById("canvas3d");
-
-// Start the application and load the scene
 const spline = new Application(canvas);
-spline
-  .load("https://prod.spline.design/6uvptqZu3DvpoRQm/scene.splinecode")
-  .then(() => {
-    // Find the object by name (e.g., "Cube")
+spline.load("https://prod.spline.design/6uvptqZu3DvpoRQm/scene.splinecode");
 
-    // Check if the object was found
-    if (spline) {
-      // Log the object for debugging
-      console.log(spline); // { name: 'Cube', id: '...', position: { x: 0, y: 0, z: 0 }, ... }
+// Once the scene is loaded, proceed with the GSAP animation
+spline.on("load", () => {
+  // Assuming the object has a name like 'objectName', you can find it by name
+  const object = spline.findObjectByName("objectName");
 
-      // Set the XYZ position of the object
-      obj.position.x = 40; // Move 10 units on the X axis
-      obj.position.y = 5; // Move 5 units on the Y axis
-      obj.position.z = -2; // Move -2 units on the Z axis
-
-      console.log(
-        `Object new position: (${spline.position.x}, ${spline.position.y}, ${spline.position.z})`
-      );
-    } else {
-      console.error('Object "Cube" not found in the scene.');
-    }
-  })
-  .catch((error) => {
-    console.error("Error loading Spline scene:", error);
-  });
+  if (object) {
+    // Create a timeline for the scroll animation
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#page2",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      })
+      .to(object.position, {
+        x: -5, // Move the object to the left (you can adjust the values)
+        duration: 1,
+      });
+  }
+});
