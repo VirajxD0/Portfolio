@@ -6,7 +6,7 @@ const canvas = document.getElementById("canvas3ds");
 // Start the application and load the scene
 const spline = new Application(canvas);
 spline
-  .load("https://prod.spline.design/27cS4Q-zrpQGgbdB/scene.splinecode")
+  .load("https://prod.spline.design/60bmf97LcGdPYIAR/scene.splinecode")
   .then(() => {
     // Find the object by name (e.g., "Cube")
 
@@ -16,7 +16,7 @@ spline
       console.log(spline); // { name: 'Cube', id: '...', position: { x: 0, y: 0, z: 0 }, ... }
 
       // Set the XYZ position of the object
-      obj.position.x = 40; // Move 10 units on the X axis
+      obj.position.x = 45; // Move 10 units on the X axis
       obj.position.y = 5; // Move 5 units on the Y axis
       obj.position.z = -2; // Move -2 units on the Z axis
 
