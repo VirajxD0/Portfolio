@@ -53,6 +53,18 @@ h4 {
   background-color: transparent; /* Semi-transparent red for visibility */
 }
 
+#canvas3dss {
+  position: absolute;
+  width: 50vw !important; /* Example width */
+  height: 100vh !important; /* Example height */
+  top: 50%; /* Center vertically */
+  left: 60%; /* Center horizontally */
+  transform: translate(-50%, -50%) scale(1.5); /* Center the canvas */
+  z-index: 999; /* Ensure it is layered on top of particles */
+  pointer-events: auto; /* Allows mouse interactions */
+  background-color: transparent; /* Semi-transparent red for visibility */
+}
+
 #particles-jss {
   position: absolute;
   width: 100%;
