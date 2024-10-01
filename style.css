@@ -27,7 +27,19 @@ h5 {
   color: #002bff;
   font-size: large;
 }
-
+h3 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  left: 5%;
+  top: 1%;
+}
+h4 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  left: 1%;
+}
 /* Canvas styles */
 #canvas3ds {
   position: absolute;
