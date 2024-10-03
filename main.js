@@ -12,7 +12,7 @@ spline.load("https://prod.spline.design/6uvptqZu3DvpoRQm/scene.splinecode");
 // Once the scene is loaded, proceed with the GSAP animation
 spline.on("load", () => {
   // Assuming the object has a name like 'objectName', you can find it by name
-  const object = spline.findObjectByName("objectName");
+  const object = spline.findObjectByName("Rectangle 2");
 
   if (object) {
     // Create a timeline for the scroll animation
