@@ -314,3 +314,5 @@ p {
 .btn:hover::after {
   background: transparent; /* Make the background transparent on hover */
 }
+h6 {
+}
