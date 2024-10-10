@@ -23,10 +23,7 @@ html {
   display: flex;
   overflow: hidden;
 }
-h5 {
-  color: #002bff;
-  font-size: large;
-}
+
 h3 {
   position: absolute;
   color: rgb(255, 255, 255);
@@ -39,6 +36,7 @@ h4 {
   color: rgb(255, 255, 255);
   font-size: 70px;
   left: 1%;
+  top: -9%;
 }
 /* Canvas styles */
 #canvas3ds {
@@ -439,4 +437,36 @@ h2 {
   font-variation-settings: "MORF" 15, "SHLN" 50;
   font-size: 100px;
   letter-spacing: 7px;
+}
+/* Hide scrollbar for all elements */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.email {
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+h5 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0%;
+  top: 50%;
+  left: 10%;
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0%;
+  position: relative;
+  top: 10%;
+  font-size: 20px;
 }

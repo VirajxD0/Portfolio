@@ -1,0 +1,9 @@
+form {
+  background: rgba(27, 31, 34, 0.8);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 0x;
+  z-index: 999999;
+}
