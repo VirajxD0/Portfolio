@@ -16,7 +16,7 @@ gsap.from("nav-link", {
 
 gsap.from("h1", {
   y: 40,
-  delay: 1,
+  delay: 3.4,
   opacity: 0,
   duration: 2,
 });

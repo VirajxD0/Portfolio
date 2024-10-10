@@ -4,6 +4,32 @@ form {
   margin: 50px auto;
   max-width: 97%;
   border-radius: 4px;
-  padding: 0x;
+  padding: 0px; /* Corrected padding */
   z-index: 999999;
+  position: relative;
+  z-index: 1;
+}
+
+.email {
+  margin: 0;
+  padding: 0px;
+  height: auto;
+}
+h5 {
+  margin: 0;
+  padding: 0px;
+  padding-bottom: 0%;
+  top: 50%;
+  left: 10%;
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+p {
+  margin: 0;
+  padding: 0px;
+  padding-bottom: 0%;
+  position: relative;
+  top: 10%;
+  font-size: 10px;
 }
