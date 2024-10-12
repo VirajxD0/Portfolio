@@ -26,13 +26,13 @@ form {
 .sign {
   background: transparent;
   margin: 0;
-  width: 300px; /* Adjust this value as needed */
+  width: 380px; /* Adjust this value as needed */
   height: auto;
   padding: 0;
   position: absolute;
   z-index: 10;
   top: 50%;
-  left: 75%;
+  left: 73%;
 }
 
 .email {
@@ -43,6 +43,9 @@ form {
   padding-left: 0%;
   padding-right: 0%;
   padding-top: 0%;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 h5 {
   margin: 0;
