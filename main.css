@@ -26,13 +26,13 @@ form {
 .sign {
   background: transparent;
   margin: 0;
-  width: 380px; /* Adjust this value as needed */
+  width: 400px; /* Adjust this value as needed */
   height: auto;
   padding: 0;
   position: absolute;
   z-index: 10;
-  top: 50%;
-  left: 73%;
+  top: 44%;
+  left: 70%;
 }
 
 .email {
@@ -51,9 +51,9 @@ h5 {
   margin: 0;
   padding: 0;
   display: inline-block;
-  top: 40%;
-  left: 72%;
-  font-size: 40px;
+  top: 37%;
+  left: 69%;
+  font-size: 45px;
   position: relative;
   padding-bottom: 0%;
   padding-left: 0%;
@@ -68,14 +68,28 @@ h5 {
   -webkit-background-clip: text;
   color: transparent;
 }
+h7 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  top: 93%;
+  left: 10%;
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0%;
+  color: white;
+}
 p {
   margin: 0;
   padding: 0px;
   padding-bottom: 0%;
   position: relative;
-  top: 33%;
-  left: 72%;
-  font-size: 20px;
+  top: 29%;
+  left: 69%;
+  font-size: 25px;
   color: #edf1ee;
 }
 
