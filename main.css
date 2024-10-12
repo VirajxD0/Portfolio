@@ -12,26 +12,42 @@ form {
 
 .email {
   margin: 0;
-  padding: 0px;
+  padding: 0;
   height: auto;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0%;
 }
 h5 {
   margin: 0;
-  padding: 0px;
-  padding-bottom: 0%;
-  top: 50%;
-  left: 10%;
-  color: white;
+  padding: 0;
+  display: inline-block;
+  top: 20%;
+  left: 1%;
   font-size: 30px;
   position: relative;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0%;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 p {
   margin: 0;
   padding: 0px;
   padding-bottom: 0%;
   position: relative;
-  top: 10%;
+  top: 50%;
   font-size: 10px;
+  color: #27c93f;
 }
 
 .container {
