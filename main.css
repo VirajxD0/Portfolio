@@ -250,10 +250,12 @@ form .icons a {
   color: white;
 }
 #linkdn {
-  color: blue;
+  color: rgb(66, 66, 246);
 }
 #insta {
   background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 form .half .item input:focus,
