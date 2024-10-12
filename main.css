@@ -239,13 +239,21 @@ form .action input[type="submit"] {
 }
 
 form .icons a {
-  border: 1px solid white;
-  border-radius: 50%;
-  line-height: 36px;
+  border: 3px solid rgb(233, 226, 226);
+  border-radius: 100%;
+  line-height: 45px;
   text-align: center;
-  font-weight: 600;
-  width: 38px;
+  font-weight: 1000;
+  width: 45px;
   margin-right: 10px;
+  font-size: 35px;
+  color: white;
+}
+#linkdn {
+  color: blue;
+}
+#insta {
+  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
 }
 
 form .half .item input:focus,
