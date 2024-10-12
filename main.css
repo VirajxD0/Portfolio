@@ -8,7 +8,7 @@ form {
   height: 300px;
   position: absolute;
   z-index: 10;
-  top: 25%;
+  top: 23%;
   left: 27%;
   color: #f3faf4;
 }
@@ -22,6 +22,17 @@ form {
   z-index: 10;
   top: 35%;
   left: 5%;
+}
+.sign {
+  background: transparent;
+  margin: 0;
+  width: 300px; /* Adjust this value as needed */
+  height: auto;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 75%;
 }
 
 .email {
@@ -37,9 +48,9 @@ h5 {
   margin: 0;
   padding: 0;
   display: inline-block;
-  top: 60%;
-  left: 60%;
-  font-size: 30px;
+  top: 40%;
+  left: 72%;
+  font-size: 40px;
   position: relative;
   padding-bottom: 0%;
   padding-left: 0%;
@@ -59,10 +70,10 @@ p {
   padding: 0px;
   padding-bottom: 0%;
   position: relative;
-  top: 50%;
-  left: 50%;
-  font-size: 10px;
-  color: #27c93f;
+  top: 33%;
+  left: 72%;
+  font-size: 20px;
+  color: #edf1ee;
 }
 
 .container {
