@@ -13,6 +13,7 @@ particlesJS("particles-jss", {
       random: false,
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
+
     size: {
       value: 2.5,
       random: true,

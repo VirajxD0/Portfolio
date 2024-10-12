@@ -18,6 +18,7 @@ particlesJS("particles-js1", {
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
     },
+
     line_linked: {
       enable: false,
       distance: 150,
