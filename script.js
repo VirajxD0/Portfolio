@@ -1,6 +1,6 @@
 gsap.from("nav", {
   y: -30,
-  delay: 2,
+  delay: 5,
   opacity: 0,
   stagger: 0.3,
   duration: 1,
@@ -16,7 +16,7 @@ gsap.from("nav-link", {
 
 gsap.from("h1", {
   y: 40,
-  delay: 4.8,
+  delay: 6,
   opacity: 0,
   duration: 2,
 });
